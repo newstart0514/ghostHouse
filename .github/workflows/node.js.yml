@@ -12,7 +12,7 @@ permissions:
 
 # 定义一个作业
 jobs:
-  build-and-deploy:
+  build:
     concurrency: ci-${{ github.ref }}
     # 运行器，使用 GitHub 托管的 ubuntu-latest
     runs-on: ubuntu-latest
@@ -29,6 +29,18 @@ jobs:
 
       # 部署到 GitHub Pages，使用第三方操作
       - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
