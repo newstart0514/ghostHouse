@@ -7,34 +7,37 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+
 # 定义一个作业
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     # 运行器，使用 GitHub 托管的 ubuntu-latest
     runs-on: ubuntu-latest
     # 步骤
     steps:
       # 检出仓库代码
-      - name: Checkout
-        uses: actions/checkout@v2.3.1
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
       # 设置 node 环境，使用 node18
-      - name: Setup Node
+      - name: Setup Node 🔧
         uses: actions/setup-node@v2
         with:
           node-version: '18'
 
       # 安装依赖
-      - name: Install Dependencies
+      - name: Install Dependencies 🔧
         run: npm install
 
       # 构建项目
-      - name: Build
+      - name: Build 🔧
         run: npm run build
 
       # 部署到 GitHub Pages，使用第三方操作
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages # 要部署的分支
-          folder: dist # 要部署的文件夹
+          folder: dist
