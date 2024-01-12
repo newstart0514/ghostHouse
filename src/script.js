@@ -23,13 +23,13 @@ scene.fog = fog
  */
 const textureLoader = new THREE.TextureLoader()
 // door
-const doorColorTexture = textureLoader.load('../static/textures/door/color.jpg')
-const doorAlphaTexture = textureLoader.load('../static/textures/door/alpha.jpg')
-const doorAmbientOcclusionTexture = textureLoader.load('../static/textures/door/ambientOcclusion.jpg')
-const doorHeightTexture = textureLoader.load('../static/textures/door/height.jpg')
-const doorNormalTexture = textureLoader.load('../static/textures/door/normal.jpg')
-const doorMetalnessTexture = textureLoader.load('../static/textures/door/metalness.jpg')
-const doorRoughnessTexture = textureLoader.load('../static/textures/door/roughness.jpg')
+const doorColorTexture = textureLoader.load('https://s2.loli.net/2024/01/12/jqlyFoVKMXGawWk.jpg')
+const doorAlphaTexture = textureLoader.load('https://s2.loli.net/2024/01/12/vn4AxaUbhRkNq5f.jpg')
+const doorAmbientOcclusionTexture = textureLoader.load('https://s2.loli.net/2024/01/12/4pcVBRZhlS3CwPa.jpg')
+const doorHeightTexture = textureLoader.load('https://s2.loli.net/2024/01/12/DGyd5Z9CPn1IkY7.jpg')
+const doorNormalTexture = textureLoader.load('https://s2.loli.net/2024/01/12/sIhAtRfjXLWEHSb.jpg')
+const doorMetalnessTexture = textureLoader.load('https://s2.loli.net/2024/01/12/VnmQ1FRNZj4yBte.jpg')
+const doorRoughnessTexture = textureLoader.load('https://s2.loli.net/2024/01/12/Z9wnysr1gtMqNKx.jpg')
 // bricks
 const bricksColorTexture = textureLoader.load('../static/textures/bricks/color.jpg')
 const bricksAmbientOcclusionTexture = textureLoader.load('../static/textures/bricks/ambientOcclusion.jpg')
