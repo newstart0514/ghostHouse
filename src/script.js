@@ -31,15 +31,15 @@ const doorNormalTexture = textureLoader.load('https://s2.loli.net/2024/01/12/sIh
 const doorMetalnessTexture = textureLoader.load('https://s2.loli.net/2024/01/12/VnmQ1FRNZj4yBte.jpg')
 const doorRoughnessTexture = textureLoader.load('https://s2.loli.net/2024/01/12/Z9wnysr1gtMqNKx.jpg')
 // bricks
-const bricksColorTexture = textureLoader.load('../static/textures/bricks/color.jpg')
-const bricksAmbientOcclusionTexture = textureLoader.load('../static/textures/bricks/ambientOcclusion.jpg')
-const bricksNormalTexture = textureLoader.load('../static/textures/bricks/normal.jpg')
-const bricksRoughnessTexture = textureLoader.load('../static/textures/bricks/roughness.jpg')
+const bricksColorTexture = textureLoader.load('https://s2.loli.net/2024/01/12/GPBpCmlRbW3x1eg.jpg')
+const bricksAmbientOcclusionTexture = textureLoader.load('https://s2.loli.net/2024/01/12/JSEgBVdmKyhXetR.jpg')
+const bricksNormalTexture = textureLoader.load('https://s2.loli.net/2024/01/12/jvbTf2GXJYM7nBL.jpg')
+const bricksRoughnessTexture = textureLoader.load('https://s2.loli.net/2024/01/12/SiZzuUd8qyHDAK6.jpg')
 // grass
-const grassColorTexture = textureLoader.load('../static/textures/grass/color.jpg')
-const grassAmbientOcclusionTexture = textureLoader.load('../static/textures/grass/ambientOcclusion.jpg')
-const grassNormalTexture = textureLoader.load('../static/textures/grass/normal.jpg')
-const grassRoughnessTexture = textureLoader.load('../static/textures/grass/roughness.jpg')
+const grassColorTexture = textureLoader.load('https://s2.loli.net/2024/01/12/c4NrX9vRYEpeBhF.jpg')
+const grassAmbientOcclusionTexture = textureLoader.load('https://s2.loli.net/2024/01/12/M6ahLpGb8vtxc2n.jpg')
+const grassNormalTexture = textureLoader.load('https://s2.loli.net/2024/01/12/uv2HK31YJpEZlgy.jpg')
+const grassRoughnessTexture = textureLoader.load('https://s2.loli.net/2024/01/12/XpD5y4E2sHnAbRM.jpg')
 
 grassColorTexture.repeat.set(8, 8)
 grassAmbientOcclusionTexture.repeat.set(8, 8)
